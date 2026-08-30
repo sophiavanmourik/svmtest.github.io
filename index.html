@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sophia Van Mourik: polymer recycling, analytical science, collaboration and science communication.">
+  <title>Sophia Van Mourik | Crosslinked Connections</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/network.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Home">
+      <img src="images/logo.png" alt="SVM logo">
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
+    <nav id="main-nav" aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#network">Research</a>
+      <a href="#network">Network</a>
+      <a href="#timeline">Projects</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" id="network" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Crosslinked Connections</p>
+        <h1 id="hero-title">Advancing sustainable materials through<br>science, data and communication.</h1>
+        <p class="intro">Explore an evolving professional network inspired by a crosslinked polymer. Hover, focus or tap a node to follow the connections.</p>
+        <div class="filters" aria-label="Filter network">
+          <button class="filter active" type="button" data-filter="all">Complete network</button>
+          <button class="filter" type="button" data-filter="research">Research</button>
+          <button class="filter" type="button" data-filter="industry">Industry</button>
+          <button class="filter" type="button" data-filter="communication">Communication</button>
+          <button class="filter" type="button" data-filter="leadership">Leadership</button>
+        </div>
+      </div>
+
+      <div class="hero-stage">
+        <div class="network-shell">
+          <svg id="polymer-network" viewBox="0 0 720 500" role="img" aria-labelledby="network-title network-desc">
+            <title id="network-title">Sophia Van Mourik professional polymer network</title>
+            <desc id="network-desc">Interactive network connecting research, industry, communication and leadership.</desc>
+            <defs>
+              <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
+                <feGaussianBlur stdDeviation="7" result="blur"></feGaussianBlur>
+                <feMerge><feMergeNode in="blur"></feMergeNode><feMergeNode in="SourceGraphic"></feMergeNode></feMerge>
+              </filter>
+            </defs>
+            <g class="bonds" aria-hidden="true">
+              <path data-from="sophia" data-to="recycling" d="M350 245 Q255 150 170 135"></path>
+              <path data-from="sophia" data-to="analytics" d="M350 245 Q445 145 535 140"></path>
+              <path data-from="sophia" data-to="industry" d="M350 245 Q485 250 575 280"></path>
+              <path data-from="sophia" data-to="communication" d="M350 245 Q270 365 175 373"></path>
+              <path data-from="sophia" data-to="leadership" d="M350 245 Q425 370 470 405"></path>
+              <path data-from="recycling" data-to="healthcare" d="M170 135 Q95 155 65 218"></path>
+              <path data-from="recycling" data-to="pc" d="M170 135 Q235 68 285 78"></path>
+              <path data-from="analytics" data-to="maldi" d="M535 140 Q620 105 660 158"></path>
+              <path data-from="analytics" data-to="data" d="M535 140 Q430 65 380 83"></path>
+              <path data-from="industry" data-to="translation" d="M575 280 Q635 330 608 374"></path>
+              <path data-from="communication" data-to="illustration" d="M175 373 Q100 390 75 445"></path>
+              <path data-from="leadership" data-to="coaching" d="M470 405 Q430 465 382 458"></path>
+              <path data-from="communication" data-to="leadership" d="M175 373 Q320 445 470 405"></path>
+              <path data-from="translation" data-to="leadership" d="M608 374 Q550 425 470 405"></path>
+              <path data-from="recycling" data-to="industry" d="M170 135 Q355 325 575 280"></path>
+              <path data-from="pc" data-to="data" d="M285 78 Q335 50 380 83"></path>
+            </g>
+            <g class="nodes">
+              <g class="node core" id="sophia" data-category="all" data-title="Sophia Van Mourik" data-text="Connecting polymer recycling, analytical chemistry, industry translation and science communication." tabindex="0" role="button">
+                <circle cx="350" cy="245" r="58"></circle><circle class="ring" cx="350" cy="245" r="68"></circle>
+                <text x="350" y="240">Sophia</text><text class="node-sub" x="350" y="260">Crosslinker</text>
+              </g>
+              <g class="node research" id="recycling" data-category="research" data-title="Polymer Recycling" data-text="Research in polymer sustainability and recycling across the waste hierarchy and different waste streams." tabindex="0" role="button"><circle cx="170" cy="135" r="43"></circle><text x="170" y="131">Polymer</text><text x="170" y="148">recycling</text></g>
+              <g class="node research" id="analytics" data-category="research" data-title="Analytical Science" data-text="Mass spectrometry, NMR and selective extraction for complex polymer systems." tabindex="0" role="button"><circle cx="535" cy="140" r="43"></circle><text x="535" y="136">Analytical</text><text x="535" y="153">science</text></g>
+              <g class="node industry" id="industry" data-category="industry" data-title="Industry Collaboration" data-text="Translating academic evidence into practical materials decisions." tabindex="0" role="button"><circle cx="575" cy="280" r="45"></circle><text x="575" y="276">Industry</text><text x="575" y="293">collaboration</text></g>
+              <g class="node communication" id="communication" data-category="communication" data-title="Science Communication" data-text="Accessible science through illustration, education and engagement." tabindex="0" role="button"><circle cx="175" cy="373" r="45"></circle><text x="175" y="369">Science</text><text x="175" y="386">communication</text></g>
+              <g class="node leadership" id="leadership" data-category="leadership" data-title="Leadership" data-text="Coaching, mentoring and team development." tabindex="0" role="button"><circle cx="470" cy="405" r="40"></circle><text x="470" y="410">Leadership</text></g>
+              <g class="node research small" id="healthcare" data-category="research industry" data-title="Healthcare Plastics" data-text="Circular opportunities for healthcare polymers." tabindex="0" role="button"><circle cx="65" cy="218" r="29"></circle><text x="65" y="214">Healthcare</text><text x="65" y="229">plastics</text></g>
+              <g class="node research small" id="pc" data-category="research" data-title="Polycarbonate" data-text="Additive tracking across recycling cycles." tabindex="0" role="button"><circle cx="285" cy="78" r="28"></circle><text x="285" y="83">PC</text></g>
+              <g class="node research small" id="data" data-category="research" data-title="Data Automation" data-text="Reproducible spectral workflows and reporting." tabindex="0" role="button"><circle cx="380" cy="83" r="30"></circle><text x="380" y="79">Data</text><text x="380" y="94">automation</text></g>
+              <g class="node research small" id="maldi" data-category="research" data-title="MALDI-MS" data-text="Peak detection, KMD analysis and additive identification." tabindex="0" role="button"><circle cx="660" cy="158" r="29"></circle><text x="660" y="163">MALDI-MS</text></g>
+              <g class="node industry small" id="translation" data-category="industry communication" data-title="Translation to Practice" data-text="Connecting academic evidence with application." tabindex="0" role="button"><circle cx="608" cy="374" r="31"></circle><text x="608" y="370">Translation</text><text x="608" y="385">to practice</text></g>
+              <g class="node communication small" id="illustration" data-category="communication" data-title="Scientific Illustration" data-text="Visual storytelling and educational resources." tabindex="0" role="button"><circle cx="75" cy="445" r="30"></circle><text x="75" y="441">Scientific</text><text x="75" y="456">illustration</text></g>
+              <g class="node leadership small" id="coaching" data-category="leadership" data-title="Coaching" data-text="Mentoring and inclusive team leadership." tabindex="0" role="button"><circle cx="382" cy="458" r="28"></circle><text x="382" y="463">Coaching</text></g>
+            </g>
+          </svg>
+        </div>
+
+        <aside class="node-card" id="node-card" aria-live="polite">
+          <p class="card-kicker">Polymer Recycling</p>
+          <h2>Research in polymer sustainability and recycling.</h2>
+          <p>Holistic hands-on experience across the waste hierarchy and different waste streams.</p>
+        </aside>
+
+        <div class="welcome-character">
+          <img src="images/SophiaWelcomeRHS.png" alt="Illustrated portfolio character">
+        </div>
+      </div>
+    </section>
+
+    <section class="timeline-section" id="timeline" aria-labelledby="timeline-title">
+      <div class="section-heading">
+        <p class="eyebrow">Career Journey</p>
+        <h2 id="timeline-title">Building connections through science, industry and communication.</h2>
+        <p>From chemical engineering and polymer chemistry to healthcare plastics recycling, industrial collaboration and science communication, each stage has expanded my network and expertise.</p>
+      </div>
+      <ol class="timeline">
+        <li class="project" tabindex="0"><span class="project-year">2015 - 2019</span><span class="project-node" aria-hidden="true"></span><div class="project-card"><p class="project-type">University of Manchester</p><h3>MEng Chemical &amp; Biological Engineering</h3><p>First Class Honours degree providing a foundation in materials, sustainability, process engineering and analytical problem solving.</p><div class="tags"><span>Engineering</span><span>Materials</span><span>Sustainability</span></div></div></li>
+        <li class="project" tabindex="0"><span class="project-year">2019 - 2023</span><span class="project-node" aria-hidden="true"></span><div class="project-card"><p class="project-type">Doctoral Research</p><h3>PhD in Polymer Chemistry</h3><p>Advanced research into polymer materials, analytical chemistry and characterisation techniques.</p><div class="tags"><span>Polymer Chemistry</span><span>Research</span><span>Publications</span></div></div><div class="project-image image-wide"><img src="images/polymer-biodegradation.png" alt="Polymer biodegradation placeholder"></div></li>
+        <li class="project" tabindex="0"><span class="project-year">2023 - Present</span><span class="project-node" aria-hidden="true"></span><div class="project-card"><p class="project-type">Research Associate</p><h3>Healthcare Plastics Recycling</h3><p>Developing solutions for healthcare plastics recycling through collaboration with industrial and healthcare partners.</p><div class="tags"><span>Healthcare Plastics</span><span>Circular Economy</span><span>Industry Collaboration</span></div></div><div class="project-image image-small"><img src="images/polymer-sample.png" alt="Polymer sample placeholder"></div></li>
+        <li class="project" tabindex="0"><span class="project-year">Current Project</span><span class="project-node" aria-hidden="true"></span><div class="project-card"><p class="project-type">Analytical Workflow Development</p><h3>Polycarbonate Additive Tracking</h3><p>Identifying additives and degradation products using selective extraction, MALDI-MS and NMR spectroscopy.</p><div class="tags"><span>MALDI-MS</span><span>NMR</span><span>Polycarbonate</span></div></div><div class="project-image"><img src="images/polycarbonate-analysis.png" alt="Polycarbonate analysis placeholder"></div></li>
+        <li class="project" tabindex="0"><span class="project-year">Current Project</span><span class="project-node" aria-hidden="true"></span><div class="project-card"><p class="project-type">Data Science</p><h3>Automated Polymer Analytics</h3><p>Developing reproducible R workflows for peak detection, KMD analysis, visualisation and reporting.</p><div class="tags"><span>R Programming</span><span>KMD Analysis</span><span>Data Automation</span></div></div><div class="project-image"><img src="images/data-analysis.png" alt="Data analysis placeholder"></div></li>
+        <li class="project" tabindex="0"><span class="project-year">Current</span><span class="project-node" aria-hidden="true"></span><div class="project-card"><p class="project-type">Leadership</p><h3>Dodgeball Coaching</h3><p>Coaching competitive squads and supporting athlete and team development.</p><div class="tags"><span>Coaching</span><span>Leadership</span><span>Team Development</span></div></div><div class="project-image image-small"><img src="images/dodgeball-coaching.png" alt="Coaching placeholder"></div></li>
+        <li class="project" tabindex="0"><span class="project-year">Growing</span><span class="project-node" aria-hidden="true"></span><div class="project-card"><p class="project-type">Science Communication</p><h3>Illustration &amp; Public Engagement</h3><p>Combining scientific expertise with visual storytelling to make polymer science accessible.</p><div class="tags"><span>Illustration</span><span>Education</span><span>Public Engagement</span></div></div><div class="project-image"><img src="images/science-communication.png" alt="Science communication placeholder"></div></li>
+        <li class="project" tabindex="0"><span class="project-year">Future</span><span class="project-node" aria-hidden="true"></span><div class="project-card"><p class="project-type">Consultancy &amp; Portfolio</p><h3>Connecting Academia and Industry</h3><p>Building consultancy activities centred on polymer recycling, analytical chemistry and industry translation.</p><div class="tags"><span>Consultancy</span><span>Industry</span><span>Science Communication</span></div></div><div class="project-image"><img src="images/academia-industry.png" alt="Academia and industry placeholder"></div></li>
+      </ol>
+    </section>
+
+    <section class="about" id="about" aria-labelledby="about-title">
+      <p class="eyebrow">The Metaphor</p>
+      <h2 id="about-title">A resilient network is built through crosslinks.</h2>
+      <p>The structure deliberately borrows from hand-drawn polymer diagrams. Research themes form the backbone, projects create branches, and interdisciplinary work creates the crosslinks.</p>
+      <a class="cta" href="mailto:YOUR-EMAIL@example.com">Start a conversation</a>
+    </section>
+  </main>
+
+  <footer><p>&copy; <span id="year"></span> Sophia Van Mourik</p><p>Built as a static GitHub Pages site.</p></footer>
+</body>
+</html>
